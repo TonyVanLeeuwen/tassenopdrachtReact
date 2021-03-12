@@ -1,12 +1,11 @@
 import React from 'react';
-import bag1 from "./assets/bag_1.png";
 
-function bag ({}){
+function bag ({ spanText,image, imgAlt, bagtype, price}){
     return (
-        <article><span>Best seller</span>
-            <img src={bag1} alt="roze tas"/>
-            <p>The handy bag</p>
-            <h4>`€ ${},-`</h4>
+        <article><span>{spanText}</span>
+            <img src={image} alt={imgAlt}/>
+            <p>The {bagtype} bag</p>
+            <h4>€{price},-</h4>
         </article>
         )
 }
