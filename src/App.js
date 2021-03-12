@@ -15,9 +15,9 @@ function App() {
         <>
             <h1>Handbags & Purses</h1>
             <nav>
-                <Button buttontext="to the collection"/>
-                <Button buttontext="shop all product"/>
-                <Button buttontext="pre-orders" disabled={true}/>
+                <Button buttonText="to the collection"/>
+                <Button buttonText="shop all bags"/>
+                <Button buttonText="pre-orders" disabled={true}/>
             </nav>
 
             <main>
@@ -28,13 +28,16 @@ function App() {
             </main>
 
             <footer>
-                <Tile amountOfText={2} title="the brand"
-                      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eaque earum hic ipsam laudantium libero rerum tempora totam. Fuga, tenetur."
-                />
+                <Tile title="the brand"
+                ><p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eaque earum hic ipsam laudantium
+                    libero rerum tempora totam. Fuga, tenetur."</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eaque earum hic ipsam
+                        laudantium libero rerum tempora totam. Fuga, tenetur."</p>
+                </Tile>
                 <Tile img={brand} alt="afbeelding van het merk"/>
                 <Tile img={story} alt="twee knuffelende vrouwen"/>
-                <Tile title="Our story" amountOfText={1}
-                      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ea eaque error, excepturi facilis odio quia quisquam. Alias, quam voluptates!"/>
+                <Tile title="Our story">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ea eaque error,
+                    excepturi facilis odio quia quisquam. Alias, quam voluptates!"</Tile>
             </footer>
         </>
     );

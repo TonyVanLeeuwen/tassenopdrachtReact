@@ -1,19 +1,11 @@
 import React from 'react';
 
-function tile({title, text, amountOfText, img, alt}) {
-    if (amountOfText === 2) {
+function tile({title, children, img, alt}) {
+    if (children) {
         return (
             <section>
                 <h2>{title}</h2>
-                <p>{text}</p>
-                <p>{text}</p>
-            </section>
-        );
-    } else if (amountOfText < 2) {
-        return (
-            <section>
-                <h2>{title}</h2>
-                <p>{text}</p>
+                {children}
             </section>
         );
     } else {
@@ -23,7 +15,7 @@ function tile({title, text, amountOfText, img, alt}) {
             </section>
         );
     }
-    ;
+
 }
 
 export default tile;

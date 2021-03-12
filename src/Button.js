@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Button({buttontext, disabled}){
+function Button({buttonText, disabled}){
     if (disabled){ return (
-        <button disabled={true} onClick={()=> console.log(buttontext)}> {buttontext} </button>
+        <button disabled={true} onClick={()=> console.log(buttonText)}> {buttonText} </button>
     )
     } else {
         return(
-            <button onClick={()=> console.log(buttontext)}> {buttontext} </button>
+            <button onClick={()=> console.log(buttonText)}> {buttonText} </button>
         )
     }
 }
