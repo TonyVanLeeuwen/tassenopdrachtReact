@@ -1,6 +1,6 @@
 import React from 'react';
 
-function bag ({ spanText,image, imgAlt, bagtype, price}){
+function product ({ spanText,image, imgAlt, bagtype, price}){
     return (
         <article><span>{spanText}</span>
             <img src={image} alt={imgAlt}/>
@@ -12,4 +12,4 @@ function bag ({ spanText,image, imgAlt, bagtype, price}){
 
 
 
-export default bag;
+export default product;

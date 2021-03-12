@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Button from "./Button";
-import Bag from "./Bag";
+import Bag from "./Product";
 import Tile from './Tile';
 import bag1 from './assets/bag_1.png';
 import bag2 from './assets/bag_2.png';
@@ -16,7 +16,7 @@ function App() {
             <h1>Handbags & Purses</h1>
             <nav>
                 <Button buttontext="to the collection"/>
-                <Button buttontext="shop all bag"/>
+                <Button buttontext="shop all product"/>
                 <Button buttontext="pre-orders" disabled={true}/>
             </nav>
 
